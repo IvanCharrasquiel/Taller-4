@@ -21,8 +21,8 @@
                     <label for="">Account Type: </label>
                 </td>
                 <td>
-                    <input type="radio" name="opcion">Individual <br>
-                    <input type="radio" name="opcion">Entity
+                    <input required type="radio" name="opcion">Individual <br>
+                    <input required type="radio" name="opcion">Entity
                 </td>
             </tr>
 
@@ -31,7 +31,7 @@
                     <label for="">First name:</label>
                 </td>
                 <td>
-                    <input style="width: 200px;" type="text" placeholder="(Mr|Ms|Mrs)" pattern="(Mr|Ms|Mrs) [A-z]*" required>
+                    <input style="width: 200px;" type="text" placeholder="(Mr|Ms|Mrs) Ivan" pattern="(Mr|Ms|Mrs) [A-z]*" required>
                 </td>
             </tr>
             <tr>
@@ -39,14 +39,14 @@
                     <label for="">Middle Name or Initial:</label>
                 </td>
                 <td>
-                    <input style="width: 200px;" type="text" pattern="[A-Z]{1}[a-z]{1}">
+                    <input placeholder="Cr" style="width: 200px;" type="text" pattern="[A-Z]{1}[a-z]{1}" required>
                 </td>
             </tr>
             <tr>
                 <td class="tableText">
                     <label for="">Last Name:</label>
                 <td>
-                    <input style="width: 200px;" type="text" pattern="(Mr|Ms|Mrs) [A-z]+( [A-Za-z]+){1,3}">
+                    <input required placeholder="Mr Charrasquiel Romero" style="width: 200px;" type="text" pattern="(Mr|Ms|Mrs) [A-z]+( [A-Za-z]+){1,3}">
                 </td>
             </tr>
             <tr>
@@ -54,7 +54,7 @@
                     <label for="">Suffix:</label>
                 </td>
                 <td>
-                    <select name="" id="">
+                    <select required name="" id="">
 
                         <option value="">- -</option>
                         <option value="">Mr</option>
@@ -105,7 +105,7 @@
                     <label for="">State: </label>
                 </td>
                 <td>
-                    <select name="" id="">
+                    <select required name="" id="">
 
                         <option value="">- -</option>
                         <option value=""> Amazonas</option>
@@ -147,7 +147,7 @@
                     <label for="">Zip Code: </label>
                 </td>
                 <td>
-                    <input required style="width: 50px;" type="text" pattern="\d{6}"> -
+                    <input required placeholder="######" style="width: 50px;" type="text" pattern="\d{6}"> -
                     <input style="width: 50px;" type="text" pattern="\d{4}">
                     <label for="">(Plus Four - Optional)</label>
                 </td>
@@ -157,13 +157,13 @@
                     <label for="">Home Phone: </label>
                 </td>
                 <td>
-                    (<input style="width: 30px;" type="text" pattern="\+\d{2}">)
-                    <input style="width: 30px;" type="text" pattern="\d{3}"> -
-                    <input style="width: 40px;" type="text" pattern="\d{7}"></td>
+                    (<input required placeholder="+dd" style="width: 30px;" type="text" pattern="\+\d{2}">)
+                    <input required placeholder="ddd" style="width: 30px;" type="text" pattern="\d{3}"> -
+                    <input required placeholder="ddddddd" style="width: 40px;" type="text" pattern="\d{7}"></td>
             </tr>
             <tr>
                 <Td class="tableText"><label for="">Driver's License/State ID Number:</label></Td>
-                <Td><input type="text" pattern="(D)\d+">
+                <Td><input required placeholder="D1" type="text" pattern="(D)\d+">
                 </Td>
             </tr>
             <tr>
@@ -178,9 +178,9 @@
             <tr>
                 <td class="tableText"><label for="">Expiration Date: </label></td>
                 <td>
-                    <input style="width: 30px;" type="text"> -
-                    <input style="width: 30px;" type="text"> -
-                    <input style="width: 50px;" type="text"> (MM-DD-YYYY) <br><br></td>
+                    <input placeholder="1-12" style="width: 30px;" type="text" min="1" max="12" required> -
+                    <input placeholder="1-31" style="width: 30px;" type="text" min="1" max="31" required> -
+                    <input placeholder="<2000" style="width: 50px;" type="text" min="2000" required> (MM-DD-YYYY) <br><br></td>
             </tr>
         </table><br>
 
