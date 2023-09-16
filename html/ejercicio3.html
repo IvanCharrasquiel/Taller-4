@@ -84,7 +84,7 @@
             </tr>
             <tr>
                 <td class="tableText" >
-                    <label style="" for="">Street Address:</label>
+                    <label for="">Street Address:</label>
                 </td>
                 <td>
                     <input style="width: 300px;" type="text"><br>
@@ -146,9 +146,9 @@
                 <td class="tableText">
                     <label for="">Zip Code: </label>
                 </td>
-                <td class="">
-                    <input style="width: 50px;" type="text"> -
-                    <input style="width: 50px;" type="text">
+                <td>
+                    <input required style="width: 50px;" type="text" pattern="\d{6}"> -
+                    <input style="width: 50px;" type="text" pattern="\d{4}">
                     <label for="">(Plus Four - Optional)</label>
                 </td>
             </tr>
@@ -157,13 +157,13 @@
                     <label for="">Home Phone: </label>
                 </td>
                 <td>
-                    (<input style="width: 30px;" type="text">)
-                    <input style="width: 30px;" type="text"> -
-                    <input style="width: 40px;" type="text"></td>
+                    (<input style="width: 30px;" type="text" pattern="\+\d{2}">)
+                    <input style="width: 30px;" type="text" pattern="\d{3}"> -
+                    <input style="width: 40px;" type="text" pattern="\d{7}"></td>
             </tr>
             <tr>
                 <Td class="tableText"><label for="">Driver's License/State ID Number:</label></Td>
-                <Td><input type=" text">
+                <Td><input type="text" pattern="(D)\d+">
                 </Td>
             </tr>
             <tr>
