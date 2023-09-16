@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 2</title>
+</head>
+<body>
+    <form action=""><center>
+        <table>
+            <tr>
+                <td><label for="">User id:</td>
+                <td><input required pattern="[0-9]{5,12}" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Pasword:</label></td>
+                <td><input required type="password" pattern="{7,12}"></td>
+            </tr>
+            <tr>
+                <td><label for="">Name:</label></td>
+                <td><input required type="text" pattern="[A-z ]*"></td>
+            </tr>
+            <tr>
+                <td><label for="">Address:</label> </td>
+                <td><input type="text" ></td>
+            </tr>
+            <tr>
+                <td> <label for="">Country</label></td>
+                <td> <select name="" id="">
+                    <option value="">(Please select a country)</option>
+                    <option value="">Colombia</option>
+                    <option value="">Argentina</option>
+                    <option value="">Mexico</option>
+                    <option value="">EEUU</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="">ZIP Code</label> </td>
+                <td><input required type="text" pattern="[0-9]*"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label> </td>
+                <td><input required type="email"></td>
+            </tr>
+            <tr>
+                <td><label for="">Sex</label></td>
+                <td>
+                    <input name="sexo" type="radio">Male
+                    <input name="sexo" type="radio">Female <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Lenguage</label></td>
+                <td><input required name="lenguage" checked type="checkbox">English
+                    <input required name="lenguage" type="checkbox">Non English</td>
+            </tr>
+            <tr style="height: 100px;">
+                <td><label for="">About</label></td>
+                <td><input style="height: 100px;" required type="text"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2"><input  type="submit" value="SUBMIT"><br>  </td>
+            </tr>
+        </table>
+    </center>
+       
+        
+    </form>
+</body>
+</html>
